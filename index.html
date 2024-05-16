@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Users</title>
+</head>
+<body>
+    <div class="content-wrapper">
+        <h1 class="title">Отображение месячного баланса</h1>
+        <form class="form">
+            <div class="form-elem">
+                <label>Выберите пользователя:</label>
+                <select class="form-select" id="users"></select>
+            </div>
+            <div class="form-elem">
+                <button class="btn-form" id="submit">Показать</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="report" class="content-wrapper hide">
+        <h1 class="title">Отчет</h1>
+        <table>
+            <thead>
+            <tr>
+                <th scope="col">Месяц</th>
+                <th scope="col">Баланс</th>
+            </tr>
+            </thead>
+            <tbody id="result-tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div id="overlay" class="hide">
+        <div class="cv-spinner">
+            <span class="spinner"></span>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
